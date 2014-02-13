@@ -1,0 +1,15 @@
+body {
+
+    width: 300px;
+    height: 550px;
+    font-family: Helvetica;
+    font-size: 10pt;
+
+}
+
+#floatleft {
+
+    float: left;
+    padding-right: 7px;
+
+}
