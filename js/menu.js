@@ -1,5 +1,5 @@
-chrome.tabs.executeScript(null, {file: "jquery.js"});
-chrome.tabs.executeScript(null, {file: "main.js"});
+chrome.tabs.executeScript(null, {file: "content-scripts/jquery.js"});
+chrome.tabs.executeScript(null, {file: "content-scripts/main.js"});
 
 var randomUserData;
 

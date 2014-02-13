@@ -2,9 +2,16 @@ body {
 
     width: 300px;
     height: 550px;
-    font-family: Helvetica;
+    font-family: Helvetica, Arial, serif;
     font-size: 10pt;
+    background-color: #fdeae4;
+    color: black;
 
+
+}
+
+h3 {
+    color: #e45e39;
 }
 
 #floatleft {
