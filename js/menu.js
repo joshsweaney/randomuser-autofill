@@ -1,6 +1,3 @@
-chrome.tabs.executeScript(null, {file: "content-scripts/jquery.js"});
-chrome.tabs.executeScript(null, {file: "content-scripts/main.js"});
-
 var randomUserData;
 
 $(document).ready(function() {
@@ -23,6 +20,8 @@ $(document).ready(function() {
             chrome.tabs.sendMessage(tabs[0].id,
             
                 {
+                    "autodetect": false,
+
                     "titleID": $("#titleID").val(),
                     "firstNameID": $("#firstNameID").val(),
                     "lastNameID": $("#lastNameID").val(),
@@ -46,6 +45,38 @@ $(document).ready(function() {
 
         event.preventDefault();
     
+    });
+
+    $("#autoDetect").submit(function(event) {
+
+        chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+
+            chrome.tabs.sendMessage(tabs[0].id,
+
+                {
+                    "autodetect": true
+                }, function(response) {
+
+                    $("#titleID").val(response.titleID);
+                    $("#firstNameID").val(response.firstNameID);
+                    $("#lastNameID").val(response.lastNameID);
+                    $("#streetID").val(response.streetID);
+                    $("#cityID").val(response.cityID);
+                    $("#stateID").val(response.stateID);
+                    $("#zipID").val(response.zipID);
+                    $("#emailID").val(response.emailID);
+                    $("#userID").val(response.userID);
+                    $("#pass1ID").val(response.pass1ID);
+                    $("#pass2ID").val(response.pass2ID);
+                    $("#phoneID").val(response.phoneID);
+                    $("#cellID").val(response.cellID);
+                    $("#ssnID").val(response.ssnID);
+
+            });
+
+        });
+
+        event.preventDefault();
     });
 
 });
