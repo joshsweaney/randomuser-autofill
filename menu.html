@@ -1,51 +1,83 @@
 <html>
 
     <head>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
 
     <script src="content-scripts/jquery.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <body>
 
         <img src="icons/icon.png" id="floatleft">
-        <h3>Fill in these fields with the relevant IDs of your form fields.</h3>
+        <h3>Random User Generator</h3>
+        <br><br>
+        <h4>Fill the fields under the relevant headings with the IDs of your corresponding form fields.</h4>
+        <br><br>
 
         <form id="autoDetect">
             <input type="submit" value="AutoDetect">
         </form>
 
-        <form id="mainForm">
+        <form id="mainForm" role="form">
 
-            <h4>Name</h4>
-            Title: <input type="text" id="titleID">
-            First Name: <input type="text" id="firstNameID">
-            Last Name: <input type="text" id="lastNameID">
-
-            <br>
-
-            <h4>Address</h4>
-            Street: <input type="text" id="streetID">
-            City: <input type="text" id="cityID">
-            State: <input type="text" id="stateID">
-            <br>
-            Zip Code: <input type="text" id="zipID">
-
-            <br>
-
-            <h4>User Details</h4>
-            Email: <input type="text" id="emailID">
-            Username: <input type="text" id="userID">
-            Password: <input type="text" id="pass1ID">
-            <br>
-            Confirm Password: <input type="text" id="pass2ID">
-            Phone #: <input type="text" id="phoneID">
-            Cell #: <input type="text" id="cellID">
-            <br>
-            SSN: <input type="text" id="ssnID">
-
-            <br>
+            <div class="panel-group" id="form-accordian">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#form-accordion" href="#name-group">
+                                Name
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="name-group" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Title: <input type="text" id="titleID"><br>
+                            First Name: <input type="text" id="firstNameID"><br>
+                            Last Name: <input type="text" id="lastNameID">
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#form-accordion" href="#address-group">
+                                Address
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="address-group" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Street: <input type="text" id="streetID"><br>
+                            City: <input type="text" id="cityID"><br>
+                            State: <input type="text" id="stateID"><br>
+                            Zip Code: <input type="text" id="zipID">
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#form-accordion" href="#user-details-group">
+                                User Details
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="user-details-group" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Email: <input type="text" id="emailID"><br>
+                            Username: <input type="text" id="userID"><br>
+                            Password: <input type="text" id="pass1ID"><br>
+                            Confirm Password: <input type="text" id="pass2ID"><br>
+                            Phone #: <input type="text" id="phoneID"><br>
+                            Cell #: <input type="text" id="cellID"><br>
+                            SSN: <input type="text" id="ssnID">
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <input type="submit" value="AutoFill">
 

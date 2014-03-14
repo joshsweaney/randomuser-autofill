@@ -1,17 +1,25 @@
+@font-face {
+    font-family: 'museo_slab500';
+    src: url('../fonts/Museo_Slab_500_2-webfont.eot');
+    src: url('../fonts/Museo_Slab_500_2-webfont.woff') format('woff'), url('../fonts/Museo_Slab_500_2-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
 
-    width: 750px;
-    height: 400px;
-    font-family: Helvetica, Arial, serif;
+    width: 350px;
+    font-family: museo_slab500, serif;
     font-size: 10pt;
-    background-color: #fdeae4;
+    background-color: #e45e39;
     color: black;
-
+    padding: 10px;
 
 }
 
-h3 {
-    color: #e45e39;
+h3, h4 {
+    color: white;
+    display: inline;
 }
 
 #floatleft {
