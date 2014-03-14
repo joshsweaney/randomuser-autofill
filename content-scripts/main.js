@@ -6,7 +6,7 @@ chrome.runtime.onMessage.addListener(
 
             titleID = request.titleID;
             firstNameID = request.firstNameID;
-            lastNameID = request.lastnameID;
+            lastNameID = request.lastNameID;
             streetID = request.streetID;
             cityID = request.cityID;
             stateID = request.stateID;
