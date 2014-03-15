@@ -22,6 +22,8 @@ $(document).ready(function() {
                 {
                     "autodetect": false,
 
+                    "fill_by": $("#radio-group input[type='radio']:checked").val(),
+
                     "titleID": $("#titleID").val(),
                     "firstNameID": $("#firstNameID").val(),
                     "lastNameID": $("#lastNameID").val(),
