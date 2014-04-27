@@ -4,6 +4,8 @@ Current Version: 0.3
 
 Randomuser.me AutoFill is a Chrome Extension that makes utilising the randomuser.me API even simpler. Simply enter the IDs of the fields you want to be auto-filled, and the extension will fill them with realistic data from randomuser.me, ready for you to easily test your web forms.
 
+![Screenshot](https://raw.githubusercontent.com/joshsweaney/randomuser-autofill/master/screenshot.png?raw=true)
+
 Installation
 ------------
 
