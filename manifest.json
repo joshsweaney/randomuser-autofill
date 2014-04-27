@@ -4,9 +4,15 @@
   "name": "RandomUser.me AutoFill",
   "description": "This extension helps with web app development, by filling forms with data from randomuser.me",
   "version": "0.3",
+  
+  "icons": { 
+    "32": "icons/icon32.png",
+	"48": "icons/icon48.png",
+	"128": "icons/icon128.png"	
+  },
 
   "browser_action": {
-    "default_icon": "icons/icon.png",
+    "default_icon": "icons/icon32.png",
     "default_popup": "menu.html",
     "default_title": "RandomUser.me AutoFill"
   },
