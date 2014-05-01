@@ -5,7 +5,7 @@ $(document).ready(function() {
     $("#mainForm").submit(function(event) {
 
         $.ajax({
-            url: 'http://api.randomuser.me/0.3/',
+            url: 'http://api.randomuser.me/?chrome=true',
             dataType: 'json',
             async: false,
             success: function(data){
