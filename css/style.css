@@ -1,17 +1,16 @@
 @font-face {
-    font-family: 'museo_slab500';
-    src: url('../fonts/Museo_Slab_500_2-webfont.eot');
-    src: url('../fonts/Museo_Slab_500_2-webfont.woff') format('woff'), url('../fonts/Museo_Slab_500_2-webfont.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'Ubuntu';
     font-style: normal;
+    font-weight: 300;
+    src: local('Ubuntu Light'), local('Ubuntu-Light'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v5/_aijTyevf54tkVDLy-dlnD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
 }
 
 body {
 
     width: 350px;
-    font-family: museo_slab500, serif;
+    font-family: Ubuntu, serif;
     font-size: 10pt;
-    background-color: #e45e39;
+    background-color: #2c2e31;
     color: black;
     padding: 10px;
 
@@ -33,5 +32,24 @@ h3, h4 {
 
     float: left;
     padding-right: 7px;
+
+}
+/* Removes strange Chrome default focus border around buttons */
+
+*:focus {
+    outline:none;
+}
+
+/* Bootstrap Overrides */
+
+.btn-primary {
+
+    background-color: #83ba43;
+
+}
+
+.btn-primary:hover {
+
+    background-color: #758E58;
 
 }
