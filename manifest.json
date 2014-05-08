@@ -3,7 +3,7 @@
 
   "name": "RandomUser.me AutoFill",
   "description": "This extension helps with web app development, by filling forms with data from randomuser.me",
-  "version": "0.3",
+  "version": "0.4",
   
   "icons": { 
     "32": "icons/icon32.png",
